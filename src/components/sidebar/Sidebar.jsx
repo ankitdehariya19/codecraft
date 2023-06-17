@@ -7,10 +7,10 @@ import image from './12.png';
 
 const Sidebar = () => {
   const [isShown, setIsShown] = useState(true);
-  const [isShowna, setIsShowna] = useState(true);
-  const [isShownb, setIsShownb] = useState(true);
-  const [isShownc, setIsShownc] = useState(true);
-  const [isShownd, setIsShownd] = useState(true);
+  const [isShowna, setIsShowna] = useState(false);
+  const [isShownb, setIsShownb] = useState(false);
+  const [isShownc, setIsShownc] = useState(false);
+  const [isShownd, setIsShownd] = useState(false);
 
   const toggleShow = () => {
     setIsShown(!isShown);
@@ -106,7 +106,8 @@ const Sidebar = () => {
       )}
       
       {isShownb && (
-        <div className={` min-h-screen w-96 flex`}>
+        <div className={` min-h-screen w-96 flex`}>y
+
           <Layouts/>
         </div>
       )}
